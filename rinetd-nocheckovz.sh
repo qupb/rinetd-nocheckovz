@@ -24,7 +24,7 @@ check_root(){
 
 check_ovz(){
 	apt-get update && apt-get install -y virt-what
-	[[ "`virt-what`" != "openvz" ]] && echo -e "${Error} only support OpenVZ !"
+	[[ "`virt-what`" != "openvz" ]] && echo -e "${Error} only support OpenVZ and LXC"
 }
 
 check_requirement(){
